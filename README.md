@@ -1,6 +1,7 @@
 # LW4_Improving-CNN-Performance
+## Google Colab link: https://colab.research.google.com/drive/1O74Hp2zpO2kT_qQRaYWCc5G_eIJilSpG?usp=sharing
 
-- 🧠 A. Model Evaluation Analysis
+## 🧠 A. Model Evaluation Analysis
 
 1. What were the weakest-performing classes based on the confusion matrix?
 The weakest-performing classes were those with the highest misclassification rates in the confusion matrix. These classes had many incorrect predictions, often being confused with similar-looking classes.
@@ -14,7 +15,7 @@ A low recall indicates that the model is failing to correctly identify many actu
 4. How does AUC score reflect model performance compared to accuracy?
 AUC provides a more comprehensive evaluation than accuracy because it measures how well the model distinguishes between classes across all thresholds, while accuracy only measures overall correctness.
 
-- ⚙️ B. Model Improvement
+## ⚙️ B. Model Improvement
 
 5. How did data augmentation affect validation accuracy?
 Data augmentation improved validation accuracy by increasing dataset diversity, allowing the model to generalize better and reducing overfitting.
@@ -28,7 +29,7 @@ Dropout reduced overfitting by randomly disabling neurons during training, forci
 8. How did Early Stopping prevent overfitting?
 Early Stopping monitored validation loss and stopped training once performance stopped improving, preventing the model from memorizing the training data.
 
-- 📊 C. Performance Comparison
+## 📊 C. Performance Comparison
 
 9. What improvements were observed after modifying the model?
 After modification, the model showed higher validation accuracy, lower validation loss, improved F1-scores, and better generalization.
@@ -41,7 +42,7 @@ Data augmentation contributed the most because it exposed the model to more dive
 11. Did the gap between training and validation accuracy decrease? Explain.
 Yes, the gap decreased, indicating reduced overfitting and improved generalization. The model performed more consistently on both training and validation data.
 
-- 🔍 D. Explainability (Grad-CAM Integration)
+## 🔍 D. Explainability (Grad-CAM Integration)
 
 12. How did Grad-CAM help in understanding model predictions?
 Grad-CAM highlighted the important regions in the image that influenced the model’s decision, making it easier to understand how predictions were made.
